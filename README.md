@@ -49,35 +49,29 @@ The underlying concepts provide a solid foundation for training machine learning
 
 1. Setup:
 
-    ```zsh
-    python cli.py --setup --image-format < > --pretrained-model-url < > --pretrained-model-name < >
+    `python cli.py --setup --image-format < > --pretrained-model-url < > --pretrained-model-name < >`
 
-    #
-    # e.g.
-    # python cli.py --setup --image-format jpg --pretrained-model-url http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8.tar.gz --pretrained-model-name ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8
-    #
+    E.g.
+    ```zsh
+    python cli.py --setup --image-format jpg --pretrained-model-url http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8.tar.gz --pretrained-model-name ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8
     ```
 
 2. Train:
 
-    ```
-    python cli.py --train --batch-size < > --epochs < > --train-test-split < > --pretrained-model-ckpt < >
+    `python cli.py --train --batch-size < > --epochs < > --train-test-split < > --pretrained-model-ckpt < >`
 
-    #
-    # e.g.
-    # python cli.py --train --batch-size 4 --epochs 1000 --train-test-split 0.7 --pretrained-model-ckpt 0
-    #
+    E.g.
+    ```zsh
+    python cli.py --train --batch-size 4 --epochs 1000 --train-test-split 0.7 --pretrained-model-ckpt 0
     ```
 
 3. Smoke test:
 
-    ```
-    python cli.py --validate --trained-model-ckpt < >
+    `python cli.py --validate --trained-model-ckpt < >`
 
-    #   
-    # e.g.   
-    # python cli.py --validate --trained-model-ckpt 1
-    #
+    E.g.
+    ```zsh
+    python cli.py --validate --trained-model-ckpt 1
     ```
 ### Running Project: Using notebooks
 
@@ -94,13 +88,11 @@ From the repository's root directory, start a Jupyter Notebook session and selec
 
 ###### N.b., to enable GPU-base training, check your TensorFlow version and ensure [tallying CUDA and CUDNN versions](https://www.tensorflow.org/install/source_windows) are installed.
 
----
 
 # Promotion
 
 👏 [Star if you liked](https://github.com/edisonslightbulbs/tfod-model-training/stargazers) 
 
-👉 [Share if you loved](https://github.com/edisonslightbulbs/tfod-model-training "Copy project link")
+👐 [Share if you loved](https://github.com/edisonslightbulbs/tfod-model-training "Copy project link")
 
-🎓 [Fork to contribute](https://github.com/edisonslightbulbs/tfod-model-training/fork).
-
+🎓 [Fork to contribute](https://github.com/edisonslightbulbs/tfod-model-training/fork)
